@@ -4,11 +4,11 @@ import time
 from vk_api.keyboard import *
 import traceback
 from vk_api.bot_longpoll import *
-vk_session = vk_api.VkApi(token='033a6ae105811eb3c08169504c7a549a3729832d931f34081b11eb9bd0570750e312e1f239015a7717193')
+vk_session = vk_api.VkApi(7193')
 vk = vk_session.get_api()
 print('Bot is working ;3')
 def start():
-    longpoll = VkBotLongPoll(vk_session,'195504651')
+    longpoll = VkBotLongPoll(651')
     for event in longpoll.listen():
         if event.type == VkBotEventType.MESSAGE_NEW:
             if event.from_chat:
@@ -18,7 +18,7 @@ def start():
                   text1 = random.choice(['[foxy]', '[fsociety]', '[foxeditor]'])    #создаем переменную, в которуй записываем рандомный выбор названия кнопки
                   text2 = random.choice(['[foxeditor]', '[fcociety]', '[foxy]'])
                   text3 = random.choice(['[foxeditor]', '[foxy]', '[montelisa]'])
-                  text4 = random.choice(['[foxy]', '[fsociety]', '[foxeditor]'])
+                  text4 = random.choice(['[foxy]', '[fsociety]', '[https://github.com/montelisa/MCRadiBot]'])
                   col1 = random.choice(['negative','primary', 'positive', 'secondary'])
                   col2 = random.choice(['negative','primary', 'positive', 'secondary'])
                   col3 = random.choice(['negative','primary', 'positive', 'secondary'])
@@ -34,7 +34,7 @@ def start():
                   text4 = random.choice(['[fsociety]', '[foxy]', '[foxy]'])
                   col1 = random.choice(['negative', 'primary', 'positive', 'secondary'])
                   col2 = random.choice(['negative', 'primary', 'positive', 'secondary'])
-                  col3 = random.choice(['negative', 'primary', 'positive', 'secondary'])
+                  col3 = random.choice(['negative', 'primary', 'positive', 'secondary'])hhh
                   col4 = random.choice(['negative', 'positive', 'secondary', 'primary'])
                   keyboard.add_button(text1,color=col1)   #добавляем текст в клавиатуру
                   keyboard.add_button(text2,color=col2)
