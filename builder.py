@@ -17,8 +17,8 @@ banner = '''
 '''
 print(banner)
 
-token = input('\033[31mВедите токен сообщества--->\033[39m')
-id = input('\033[31mЧисловой id группы---->\033[39m')
+token = input('\033[31mВедите токен сообщества--->')
+id = input('Числовой id группы---->')
 f = 'raid.py'
 n = open(f,"w",encoding='utf-8')
 n.write("""import vk_api
@@ -38,7 +38,7 @@ def start():
                 while True:
                   chat = event.chat_id
                   keyboard = VkKeyboard(one_time=False)     #создаем клавиатуру
-                  text1 = random.choice(['[foxy]', '[fsociety]', '[foxeditor]'])    #создаем переменную, в которуй записываем рандомный выбор названия кнопки
+                  text1 = random.choice(['[foxy]', '[fsociety]', '[foxeditor]'])    #создаем переменную, в которую записываем рандомный выбор названия кнопки
                   text2 = random.choice(['[foxeditor]', '[fcociety]', '[foxy]'])
                   text3 = random.choice(['[foxeditor]', '[foxy]', '[montelisa]'])
                   text4 = random.choice(['[foxy]', '[fsociety]', '[foxeditor]'])
@@ -78,19 +78,6 @@ def start():
                   keyboard.add_button(text4, color=col4)
                   keyboard.add_line()
                   text1 = random.choice(['[foxy]', '[montelisa]', '[montelisa]'])
-                  ext2 = random.choice(['[foxy]', '[foxeditor]', '[montelisa]'])
-                  text3 = random.choice(['[foxy]', '[foxeditor]', '[montelisa]'])
-                  text4 = random.choice(['[foxy]', '[foxeditor]', '[montelisa]'])
-                  col1 = random.choice(['negative', 'primary', 'positive', 'secondary'])
-                  col2 = random.choice(['negative', 'primary', 'positive', 'secondary'])
-                  col3 = random.choice(['negative', 'primary', 'positive', 'secondary'])
-                  col4 = random.choice(['negative', 'positive', 'secondary', 'primary'])
-                  keyboard.add_button(text1, color=col1)
-                  keyboard.add_button(text2, color=col2)
-                  keyboard.add_button(text3, color=col3)
-                  keyboard.add_button(text4, color=col4)
-                  keyboard.add_line()
-                  text1 = random.choice(['[foxy]', '[montelisa]', '[montelisa]'])
                   text2 = random.choice(['[foxy]', '[foxeditor]', '[montelisa]'])
                   text3 = random.choice(['[foxy]', '[foxeditor]', '[montelisa]'])
                   text4 = random.choice(['[foxy]', '[foxeditor]', '[montelisa]'])
@@ -143,7 +130,20 @@ def start():
                   keyboard.add_button(text4, color=col4)
                   keyboard.add_line()
                   text1 = random.choice(['[foxy]', '[montelisa]', '[montelisa]'])
-                  ext2 = random.choice(['[foxy]', '[foxeditor]', '[montelisa]'])
+                  text2 = random.choice(['[foxy]', '[foxeditor]', '[montelisa]'])
+                  text3 = random.choice(['[foxy]', '[foxeditor]', '[montelisa]'])
+                  text4 = random.choice(['[foxy]', '[foxeditor]', '[montelisa]'])
+                  col1 = random.choice(['negative', 'primary', 'positive', 'secondary'])
+                  col2 = random.choice(['negative', 'primary', 'positive', 'secondary'])
+                  col3 = random.choice(['negative', 'primary', 'positive', 'secondary'])
+                  col4 = random.choice(['negative', 'positive', 'secondary', 'primary'])
+                  keyboard.add_button(text1, color=col1)
+                  keyboard.add_button(text2, color=col2)
+                  keyboard.add_button(text3, color=col3)
+                  keyboard.add_button(text4, color=col4)
+                  keyboard.add_line()
+                  text1 = random.choice(['[foxy]', '[montelisa]', '[montelisa]'])
+                  text2 = random.choice(['[foxy]', '[foxeditor]', '[montelisa]'])
                   text3 = random.choice(['[foxy]', '[foxeditor]', '[montelisa]'])
                   text4 = random.choice(['[foxy]', '[foxeditor]', '[montelisa]'])
                   col1 = random.choice(['negative', 'primary', 'positive', 'secondary'])
